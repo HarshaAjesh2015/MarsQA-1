@@ -24,7 +24,7 @@ namespace MarsQA_1.Feature
         [Then(@"I should be able to see the updated skill on the profile page")]
         public void ThenIShouldBeAbleToSeeTheUpdatedSkillOnTheProfilePage()
         {
-            newSkill.selectSkill(Driver.driver);
+            newSkill.saveSkill(Driver.driver);
         }
     }
 }

@@ -479,6 +479,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SpecflowTests\Bind_Steps\" />
+    <Folder Include="TestReports\Reports\" />
     <Folder Include="TestReports\Screenshots\" />
     <Folder Include="TestReports\Test_files\" />
   </ItemGroup>

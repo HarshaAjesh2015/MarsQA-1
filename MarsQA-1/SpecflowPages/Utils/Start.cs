@@ -39,6 +39,16 @@ namespace MarsQA_1.Utils
             SignIn.SigninStep();
         }
 
+
+        //[BeforeTestRun]
+  //public static void startTest()
+
+  //      {
+  //          var report = new ExtentReports(System.Property("user.dir") + "ExtentReportResults.html");
+  //          test = report.StartTest("ExtentReport");
+  //      }
+
+
         [AfterScenario]
         public void TearDown()
         {
@@ -54,11 +64,11 @@ namespace MarsQA_1.Utils
 
 
 
-            //// end test. (Reports)
+            //end test.(Reports)
             CommonMethods.Extent.EndTest(test);
 
-            //// calling Flush writes everything to the log file (Reports)
-            //CommonMethods.Extent.Flush();
+            // calling Flush writes everything to the log file (Reports)
+            CommonMethods.Extent.Flush();
 
 
 

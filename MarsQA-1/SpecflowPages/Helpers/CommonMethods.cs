@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RelevantCodes.ExtentReports;
 
+using RelevantCodes.ExtentReports.Model;
 
 namespace MarsQA_1.Helpers
 {
@@ -47,23 +48,25 @@ namespace MarsQA_1.Helpers
 
 
 
+
         public static void ExtentReports()
         {
             Extent = new ExtentReports(ConstantHelpers.ReportsPath, true, DisplayOrder.NewestFirst);
-            Extent.LoadConfig(ConstantHelpers.ReportXMLPath);
+           // Extent.LoadConfig(ConstantHelpers.ReportXMLPath);
             test = Extent.StartTest("MarsTest");
 
 
             // end test. (Reports)
-           //Extent.EndTest(test);
+            Extent.EndTest(test);
 
             // calling Flush writes everything to the log file (Reports)
-            //Extent.Flush();
+            Extent.Flush();
         }
-
     }
-    #endregion
 
 }
+    #endregion
+
+
 
 

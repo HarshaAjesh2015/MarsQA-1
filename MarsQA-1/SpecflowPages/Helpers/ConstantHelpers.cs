@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RelevantCodes.ExtentReports;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace MarsQA_1.Helpers
 {
+   
+    
     public class ConstantHelpers
     {
         //Base Url
@@ -15,9 +18,11 @@ namespace MarsQA_1.Helpers
         public static string ScreenshotPath = @"D:\MVP Studio\onboarding.specflow-master\MarsQA-1\TestReports\Screenshots\";
 
         //ExtentReportsPath
-        public static string ReportsPath = @"D:\MVP Studio\onboarding.specflow-master\MarsQA-1\TestReports\Screenshots\";
+        public static string ReportsPath = @"D:\MVP Studio\onboarding.specflow-master\MarsQA-1\TestReports\Reports\ExtentReportResults.html";
 
         //ReportXML Path
         public static string ReportXMLPath = @"D:\MVP Studio\onboarding.specflow-master\MarsQA-1\TestReports\Screenshots\";
+
+       
     }
 }
